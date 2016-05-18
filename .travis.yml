@@ -1,9 +1,1 @@
 language: r
-sudo: required
-
-# CRAN checks
-warnings_are_errors: true
-
-# explicitly specifying default
-# r_build_args:
-r_check_args: --as-cran
