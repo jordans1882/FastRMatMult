@@ -34,5 +34,5 @@ reference section
 \examples{
 A <- matrix(rnorm(10000), 100, 100)
 B <- matrix(rnorm(10000), 100, 100)
-system.time(AB <- mat_mult(A,B))
+system.time(AB <- r_naive_mm(A,B))
 }

@@ -2,7 +2,7 @@
 
 #include<R.h>
 
-void mat_mult_iter_c(double *A, double *B, double *AB, int *outer_dim1, 
+void c_naive_mm(double *A, double *B, double *AB, int *outer_dim1, 
                      int *outer_dim2, int *inner_dim){
   // Function to multiply two matrices
   // Args: Matrices A (double), B (double), and AB (double)

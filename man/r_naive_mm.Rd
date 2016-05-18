@@ -1,5 +1,5 @@
-\name{mat_mult}
-\alias{mat_mult}
+\name{r_naive_mm}
+\alias{r_naive_mm}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Function to multiply two matrices (iterative algorithm)
@@ -8,7 +8,7 @@ Function to multiply two matrices (iterative algorithm)
 Contains a triple for loop to multiply two matrices implemented in R. 
 }
 \usage{
-mat_mult(A, B)
+r_naive_mm(A, B)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -39,13 +39,13 @@ R implementation
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-mat_mult_f
-mat_mult_c
+c_naive_mm
+f_naive_mm
 }
 \examples{
 A <- matrix(rnorm(10000), 100, 100)
 B <- matrix(rnorm(10000), 100, 100)
-system.time(AB <- mat_mult(A,B))
+system.time(AB <- r_naive_mm(A,B))
 }
 \keyword{ ~kwd1 }
 \keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

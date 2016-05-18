@@ -12,7 +12,7 @@ vignette: >
 
 ```{r, echo = FALSE, message = FALSE}
 knitr::opts_chunk$set(comment = "")
-library(JAScode)
+library(FastRMatMult)
 ```
 
 The package provides details by example in how to access C libraries from R. 

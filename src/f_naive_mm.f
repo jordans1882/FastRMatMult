@@ -1,4 +1,4 @@
-       subroutine mat_mult_it(A,B,AB,outer_dim1,outer_dim2,inner_dim)
+       subroutine f_naive_mm(A,B,AB,outer_dim1,outer_dim2,inner_dim)
 	 integer outer_dim1,outer_dim2,inner_dim
          real*8 A(outer_dim1,inner_dim),B(inner_dim,outer_dim2)
 	 real*8 AB(outer_dim1,outer_dim2)

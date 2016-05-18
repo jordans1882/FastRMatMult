@@ -1,6 +1,6 @@
 ##------------------------------------------------------------------------------
 
-mat_mult_f <-function(A,B){
+f_naive_mm <-function(A,B){
 ## Function to multiply two matrices (call to Fortran)
 ## Args: Matrices A and B
 ## Returns: Matrix product AB

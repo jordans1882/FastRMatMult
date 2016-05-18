@@ -1,6 +1,6 @@
 ##------------------------------------------------------------------------------
 
-mat_mult <-
+r_naive_mm <-
 function(A,B){
   ## Function to multiply two matrices (iterative algorithm)
   ## Args: Matrices A and B

@@ -1,5 +1,5 @@
-\name{mat_mult_c}
-\alias{mat_mult_c}
+\name{c_naive_mm}
+\alias{c_naive_mm}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Function to multiply two matrices (iterative algorithm)
@@ -8,7 +8,7 @@ Function to multiply two matrices (iterative algorithm)
 An R wrapper to call in implementation of a triple for loop to multiply two matrices implemented in C. 
 }
 \usage{
-mat_mult_c(A,B)
+c_naive_mm(A,B)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -43,13 +43,14 @@ note
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-mat_mult
-mat_mult_f
+r_naive_mm
+f_naive_mm
 }
 \examples{
-A <- matrix(1:9,3,3)
-B <- matrix(11:19, 3,3)
-AB <- mat_mult_c(A,B)
+N = 1000
+A <- matrix(rnorm(N*N), N, N)
+B <- matrix(rnorm(N*N), N, N)
+system.time(AB <- c_naive_mm(A,B))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

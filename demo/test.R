@@ -20,10 +20,10 @@ b <- matrix(rnorm(n*n), n, n)
 
 mat_mult_cmp <- cmpfun(mat_mult)
 
-system.time(c <- mat_mult(a,b))
+system.time(c <- r_naive_mm(a,b))
 system.time(c <- mat_mult_cmp(a, b))
-system.time(c <- mat_mult_f(a,b))
-system.time(c <- mat_mult_c(a,b))
+system.time(c <- f_naive_mm(a,b))
+system.time(c <- c_naive_mm(a,b))
 system.time(c <- mat_mult_par(a,b))
 system.time(c <- a %*% b)
 
@@ -34,7 +34,7 @@ system.time(c <- a %*% b)
 system.time(ainv <- solve(a))
 
 
-system.time(ainv <- gpuSolve(a))
+# system.time(ainv <- gpuSolve(a))
 # > system.time(ainv <- gpuSolve(a))
 # Error in gpuSolve(a) : out of memory
 # In addition: Warning message:
@@ -44,7 +44,7 @@ system.time(ainv <- gpuSolve(a))
 
 system.time(qr <- qr(a))
 
-system.time(qr <- gpuQr(a))
+# system.time(qr <- gpuQr(a))
 # Error in gpuQr(a) : out of memory
 # In addition: Warning message:
 #   In gpuQr(a) : rGetQRDecompRR:

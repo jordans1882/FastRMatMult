@@ -1,6 +1,6 @@
 ##------------------------------------------------------------------------------
 
-mat_mult_c <-function(A,B){
+c_naive_mm <-function(A,B){
   ## Function to multiply two matrices (call to C)
   ## Args: Matrices A and B
   ## Returns: Matrix product AB
