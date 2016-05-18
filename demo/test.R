@@ -18,7 +18,7 @@ n <- 2000
 a <- matrix(rnorm(n*n), n, n)
 b <- matrix(rnorm(n*n), n, n)
 
-mat_mult_cmp <- cmpfun(mat_mult)
+mat_mult_cmp <- cmpfun(r_naive_mm)
 
 system.time(c <- r_naive_mm(a,b))
 system.time(c <- mat_mult_cmp(a, b))
